@@ -1,4 +1,4 @@
-package myTries
+package basics
 
 fun main(args: Array<String>) {
     println("Some message")
