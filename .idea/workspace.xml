@@ -4,30 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Basics.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Casting.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Exceptions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Loops.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/ThisReference.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/VisibilityModifiers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/basics/WhenAndReturning.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/MyDataClass.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/NestedClasses.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Singleton.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/SingletonParent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/SomeClass.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Static.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinScripting.xml" beforeDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with second chapter, started third">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/CompanionObject.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Composition.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Inheritance.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/InterfaceTries.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Sealed.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/StaticFuns.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/VisibilityModifiers.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/myTries/Basics.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/myTries/Customer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Customer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/myTries/MyFirstMain.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/MyFirstMain.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +63,9 @@
         <option value="Kotlin Data Class" />
         <option value="Class" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin File" />
         <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -106,13 +93,19 @@
     "Kotlin.BasicsKt.executor": "Run",
     "Kotlin.CarsKt.executor": "Run",
     "Kotlin.CastingKt.executor": "Run",
+    "Kotlin.CompanionObjectKt.executor": "Run",
+    "Kotlin.CompositionKt.executor": "Run",
     "Kotlin.ExceptionsKt.executor": "Run",
+    "Kotlin.InheritanceKt.executor": "Run",
+    "Kotlin.InterfaceTriesKt.executor": "Run",
     "Kotlin.LoopsKt.executor": "Run",
     "Kotlin.MyDataClassKt.executor": "Run",
     "Kotlin.NestedClassesKt.executor": "Run",
+    "Kotlin.SealedKt.executor": "Run",
     "Kotlin.SingletonKt.executor": "Run",
     "Kotlin.SomeClassKt.executor": "Run",
     "Kotlin.StaticKt.executor": "Run",
+    "Kotlin.VisibilityModifiersKt.executor": "Run",
     "Kotlin.WhenAndReturningKt.executor": "Run",
     "Kotlin.WhenWordKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -131,37 +124,37 @@
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.SingletonKt">
-    <configuration name="CarsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.CarsKt" />
+  <component name="RunManager" selected="Kotlin.SealedKt">
+    <configuration name="CompositionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.CompositionKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyDataClassKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.MyDataClassKt" />
+    <configuration name="InheritanceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.InheritanceKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NestedClassesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.NestedClassesKt" />
+    <configuration name="InterfaceTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.InterfaceTriesKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.SingletonKt" />
+    <configuration name="SealedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.SealedKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.StaticKt" />
+    <configuration name="VisibilityModifiersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="oop.VisibilityModifiersKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.SingletonKt" />
-        <item itemvalue="Kotlin.StaticKt" />
-        <item itemvalue="Kotlin.CarsKt" />
-        <item itemvalue="Kotlin.MyDataClassKt" />
-        <item itemvalue="Kotlin.NestedClassesKt" />
+        <item itemvalue="Kotlin.SealedKt" />
+        <item itemvalue="Kotlin.CompositionKt" />
+        <item itemvalue="Kotlin.InheritanceKt" />
+        <item itemvalue="Kotlin.VisibilityModifiersKt" />
+        <item itemvalue="Kotlin.InterfaceTriesKt" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +186,15 @@
       <option name="presentableId" value="Default" />
       <updated>1717159803146</updated>
     </task>
+    <task id="LOCAL-00001" summary="done with second chapter, started third">
+      <option name="closed" value="true" />
+      <created>1717430316685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717430316686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +207,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done with second chapter, started third" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with second chapter, started third" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -8,8 +8,8 @@ enum class Cars(private val model: String): GetModel {
 
     override fun getModel(): String {
         return model
-    }}
-
+    }
+}
 interface GetModel {
     fun getModel(): String
 }
