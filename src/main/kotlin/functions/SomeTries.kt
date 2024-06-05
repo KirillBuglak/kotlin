@@ -13,7 +13,42 @@ fun main() {
 //    outer()
 //    listWithLocalFuns(string = "Greg") //todo Named parameter
 //    funsWithDefault()
+//    println(tailRecurse(5))
+//    spreadOperator()
+//    myGenericFun(2,3)
+//    realGenerics(2)
 
+}
+
+fun <E> myGenericFun(e: E, int: Int) { //todo here we can change E to 'Any?'
+    repeat(int) { println(e) }
+}
+
+@JvmName("realGen")
+fun <E> realGenerics(e: E): E { //todo here we ensure that param and result are of the same type
+    println(e)
+    return e
+}
+
+private fun spreadOperator() {
+    val array = arrayOf("1", "2", "3")
+    println(varargFun(*array)) //todo using spread operator - '*'
+}
+
+fun varargFun(vararg strings: String): String {
+    var str = ""
+    strings.forEach { str += it }
+    return str
+}
+
+tailrec fun tailRecurse(int: Int): Int { //todo tailrec word used
+    return when (int) {
+        3 -> int * 2
+        else -> {
+            System.err.println("Hey")
+            tailRecurse(int - 1) //todo put recursion to the end - tail
+        }
+    }
 }
 
 private fun funsWithDefault() {

@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with second chapter, started third">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/CompanionObject.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Composition.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Inheritance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/InterfaceTries.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Sealed.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/StaticFuns.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/VisibilityModifiers.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="continue">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/FunLiterals.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/Infix.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/Operators.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/StandardLibFunctions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/functions/SomeTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/SomeTries.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,18 @@
                 <item name="kotlin" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -85,88 +95,98 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build kotlin.executor": "Run",
-    "Gradle.kotlin [:Main.main()].executor": "Run",
-    "Gradle.kotlin [build].executor": "Run",
-    "Kotlin.BasicsKt.executor": "Run",
-    "Kotlin.CarsKt.executor": "Run",
-    "Kotlin.CastingKt.executor": "Run",
-    "Kotlin.CompanionObjectKt.executor": "Run",
-    "Kotlin.CompositionKt.executor": "Run",
-    "Kotlin.ExceptionsKt.executor": "Run",
-    "Kotlin.InheritanceKt.executor": "Run",
-    "Kotlin.InterfaceTriesKt.executor": "Run",
-    "Kotlin.LoopsKt.executor": "Run",
-    "Kotlin.MyDataClassKt.executor": "Run",
-    "Kotlin.NestedClassesKt.executor": "Run",
-    "Kotlin.SealedKt.executor": "Run",
-    "Kotlin.SingletonKt.executor": "Run",
-    "Kotlin.SomeClassKt.executor": "Run",
-    "Kotlin.StaticKt.executor": "Run",
-    "Kotlin.VisibilityModifiersKt.executor": "Run",
-    "Kotlin.WhenAndReturningKt.executor": "Run",
-    "Kotlin.WhenWordKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/kir/IdeaProjects/kotlin",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build kotlin.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.kotlin [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.kotlin [build].executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.BasicsKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CarsKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CastingKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CompanionObjectKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.CompositionKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.ExceptionsKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.InheritanceKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.InterfaceTriesKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.LoopsKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MyDataClassKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.NestedClassesKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.SealedKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.SingletonKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.SomeClassKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.StaticKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.VisibilityModifiersKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.WhenAndReturningKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.WhenWordKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kir/IdeaProjects/kotlin&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.SealedKt">
-    <configuration name="CompositionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.CompositionKt" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InheritanceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.InheritanceKt" />
+    <configuration name="FunLiteralsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functions.FunLiteralsKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InterfaceTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.InterfaceTriesKt" />
+    <configuration name="OperatorsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functions.OperatorsKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SealedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.SealedKt" />
+    <configuration name="SomeTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functions.SomeTriesKt" />
       <module name="kotlin.main" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VisibilityModifiersKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="oop.VisibilityModifiersKt" />
+    <configuration name="StandardLibFunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functions.StandardLibFunctionsKt" />
       <module name="kotlin.main" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Kotlin.FunLiteralsKt" />
+      <item itemvalue="Kotlin.OperatorsKt" />
+      <item itemvalue="Kotlin.SomeTriesKt" />
+      <item itemvalue="Kotlin.StandardLibFunctionsKt" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.SealedKt" />
-        <item itemvalue="Kotlin.CompositionKt" />
-        <item itemvalue="Kotlin.InheritanceKt" />
-        <item itemvalue="Kotlin.VisibilityModifiersKt" />
-        <item itemvalue="Kotlin.InterfaceTriesKt" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Kotlin.SomeTriesKt" />
+        <item itemvalue="Kotlin.StandardLibFunctionsKt" />
+        <item itemvalue="Kotlin.FunLiteralsKt" />
+        <item itemvalue="Kotlin.OperatorsKt" />
       </list>
     </recent_temporary>
   </component>
