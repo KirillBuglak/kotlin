@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "1.9.20"
     application
 }
 
@@ -16,6 +16,7 @@ dependencies {
 //    implementation("joda-time;joda-time:2.12.7")
     testImplementation(kotlin("test"))
     implementation(kotlin("script-runtime"))
+    implementation(kotlin("reflect"))
 }
 
 tasks.test {

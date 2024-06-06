@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="continue">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/FunLiterals.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/Infix.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/Operators.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/StandardLibFunctions.kt" afterDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="finished fourth chapter, started fifth">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/HigherOrderFuns.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_24__9_06_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/ExtensionFunctions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/functions/SomeTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functions/SomeTries.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,7 @@
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Kotlin.PropTriesKt">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="kotlin.main" />
@@ -142,15 +141,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunLiteralsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functions.FunLiteralsKt" />
+    <configuration name="HigherOrderFunsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="functions.HigherOrderFunsKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OperatorsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functions.OperatorsKt" />
+    <configuration name="PropTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="prperties.PropTriesKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,18 +174,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Kotlin.FunLiteralsKt" />
-      <item itemvalue="Kotlin.OperatorsKt" />
+      <item itemvalue="Kotlin.HigherOrderFunsKt" />
+      <item itemvalue="Kotlin.PropTriesKt" />
       <item itemvalue="Kotlin.SomeTriesKt" />
       <item itemvalue="Kotlin.StandardLibFunctionsKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PropTriesKt" />
+        <item itemvalue="Kotlin.HigherOrderFunsKt" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Kotlin.SomeTriesKt" />
         <item itemvalue="Kotlin.StandardLibFunctionsKt" />
-        <item itemvalue="Kotlin.FunLiteralsKt" />
-        <item itemvalue="Kotlin.OperatorsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717430316686</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finished fourth chapter, started fifth">
+      <created>1717601193425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717601193425</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +236,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done with second chapter, started third" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with second chapter, started third" />
+    <MESSAGE value="finished fourth chapter, started fifth" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished fourth chapter, started fifth" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

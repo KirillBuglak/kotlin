@@ -11,6 +11,10 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### Composition instead of Inheritance
 ### apply let with run etc - Standard funs
 ### Object is a Singleton
+### Curring
+### DSL
+### Where reflexion is used - generally
+### class PropsByMapSimpler(map: Map<String, Any?>)
 
 
-# Continue form `There is a way to call a static method as you would do in Java p67 Programming Kotlin`
+# Continue form `Lazy initializations p191 Programming Kotlin`
