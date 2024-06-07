@@ -92,7 +92,7 @@ private fun ifAndTryResults() {
 
 private fun printCustomerExample() {
     val customer = Customer("John")
-    customer.printCustome()
+    customer.printCustomer()
 }
 
 private fun comparing() {

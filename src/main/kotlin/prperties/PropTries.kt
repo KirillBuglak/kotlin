@@ -1,6 +1,7 @@
 package prperties
 
 import functions.string
+import kotlin.properties.Delegates
 import kotlin.reflect.KProperty
 
 fun main() {
@@ -8,8 +9,30 @@ fun main() {
 //    println(AnotherImpl("Main").string)
 //    propsTries()
 //    propsByMapTries()
-    simplerPropsByMap()
+//    simplerPropsByMap()
+//    lazyInintTries()
+    withObservableTries()
+}
 
+private fun withObservableTries() {
+    val withObservable = WithObservable()
+
+    withObservable.int = 1
+    withObservable.int = 22
+
+    withObservable.string = "a"
+    println(withObservable.string) //todo value hasn't changed due to 'vetoable'
+    withObservable.string = "Gregory"
+    println(withObservable.string)
+
+    println(withObservable.notNull)
+}
+
+private fun lazyInintTries() {
+    val lazyInitProp = LazyInitProp()
+    println(lazyInitProp.int)
+    println(lazyInitProp.string)
+    println(lazyInitProp.string)
 }
 
 private fun simplerPropsByMap() {
@@ -90,4 +113,29 @@ class PropsByMapSimpler(map: Map<String, Any?>) { //todo using much simpler appr
 //class PropsByMapSimpler(val map: MutableMap<String, Any?>) { //todo val is used for read and Write
     val string by map
     val int by map
+}
+
+class LazyInitProp {
+    val string by lazy {
+        println("initializing - printed only once")
+        "Garret"
+    }
+    val int = 1
+}
+
+class WithObservable {
+    var int by Delegates.observable(0) {
+        prop, oldValue, newValue ->
+        onValueChange(oldValue, newValue)
+    }
+
+    var string by Delegates.vetoable("Mark") {
+            prop, oldValue, newValue -> newValue.length > oldValue.length
+    }
+
+    var notNull by Delegates.notNull<String>()
+
+    private fun onValueChange(oldValue: Int, newValue: Int) {
+        println("old value - $oldValue and a new one - $newValue")
+    }
 }

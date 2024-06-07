@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="finished fourth chapter, started fifth">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/HigherOrderFuns.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_5_24__9_06_AM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="finished eighth chapter, started ninth">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataClasses/Tries.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics/Tries.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics/TypeVariance.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nullSafetyAndReflexion/NullSafetyTries.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/basics/Basics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Basics.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/basics/Customer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Customer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oop/SingletonParent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/SingletonParent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,16 +136,9 @@
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.PropTriesKt">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="kotlin.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HigherOrderFunsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functions.HigherOrderFunsKt" />
+  <component name="RunManager" selected="Kotlin.TriesKt (1)">
+    <configuration name="NullSafetyTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nullSafetyAndReflexion.NullSafetyTriesKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,37 +151,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SomeTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functions.SomeTriesKt" />
+    <configuration name="TriesKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataClasses.TriesKt" />
       <module name="kotlin.main" />
-      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StandardLibFunctionsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="functions.StandardLibFunctionsKt" />
+    <configuration name="TriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics.TriesKt" />
       <module name="kotlin.main" />
-      <shortenClasspath name="NONE" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeVarianceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generics.TypeVarianceKt" />
+      <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Kotlin.HigherOrderFunsKt" />
+      <item itemvalue="Kotlin.NullSafetyTriesKt" />
+      <item itemvalue="Kotlin.TriesKt" />
+      <item itemvalue="Kotlin.TriesKt (1)" />
+      <item itemvalue="Kotlin.TypeVarianceKt" />
       <item itemvalue="Kotlin.PropTriesKt" />
-      <item itemvalue="Kotlin.SomeTriesKt" />
-      <item itemvalue="Kotlin.StandardLibFunctionsKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TriesKt (1)" />
+        <item itemvalue="Kotlin.TypeVarianceKt" />
+        <item itemvalue="Kotlin.TriesKt" />
+        <item itemvalue="Kotlin.NullSafetyTriesKt" />
         <item itemvalue="Kotlin.PropTriesKt" />
-        <item itemvalue="Kotlin.HigherOrderFunsKt" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Kotlin.SomeTriesKt" />
-        <item itemvalue="Kotlin.StandardLibFunctionsKt" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717601193425</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="finished fifth chapter, started sixth">
+      <created>1717688433469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717688433469</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +244,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done with second chapter, started third" />
     <MESSAGE value="finished fourth chapter, started fifth" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished fourth chapter, started fifth" />
+    <MESSAGE value="finished fifth chapter, started sixth" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished fifth chapter, started sixth" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,6 +15,9 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### DSL
 ### Where reflexion is used - generally
 ### class PropsByMapSimpler(map: Map<String, Any?>)
+### withObservable
+### @Annotations
+### Nothing type
 
 
-# Continue form `Lazy initializations p191 Programming Kotlin`
+# Continue form `Cahpter 10 Collections p277 Programming Kotlin`
