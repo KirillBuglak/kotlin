@@ -1,0 +1,125 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"08240366-9f3c-49a6-ab6f-4af1d024927c\" name=\"Changes\" comment=\"done with second chapter, started third\">\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/CompanionObject.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/Composition.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/Inheritance.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/InterfaceTries.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/Sealed.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/StaticFuns.kt\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/VisibilityModifiers.kt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Readme.md\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Readme.md\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"kotlin\" type=\"f1a62948:ProjectNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"kotlin\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"kotlin\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Tasks\" type=\"e4a08cd1:TasksNode\" />\n                <item name=\"build\" type=\"c8890929:TasksNode$1\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Kotlin Data Class\" />\n        <option value=\"Class\" />\n        <option value=\"Kotlin Enum\" />\n        <option value=\"Kotlin Object\" />\n        <option value=\"Kotlin Class\" />\n        <option value=\"Kotlin File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"KotlinScriptingSettings\" supportWarning=\"false\" />\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 3\n}</component>\n  <component name=\"ProjectId\" id=\"2hEWd9PuZtM2mWfhv8wucGbdPd6\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Gradle.Build kotlin.executor\": \"Run\",\n    \"Gradle.kotlin [:Main.main()].executor\": \"Run\",\n    \"Gradle.kotlin [build].executor\": \"Run\",\n    \"Kotlin.BasicsKt.executor\": \"Run\",\n    \"Kotlin.CarsKt.executor\": \"Run\",\n    \"Kotlin.CastingKt.executor\": \"Run\",\n    \"Kotlin.CompanionObjectKt.executor\": \"Run\",\n    \"Kotlin.CompositionKt.executor\": \"Run\",\n    \"Kotlin.ExceptionsKt.executor\": \"Run\",\n    \"Kotlin.InheritanceKt.executor\": \"Run\",\n    \"Kotlin.InterfaceTriesKt.executor\": \"Run\",\n    \"Kotlin.LoopsKt.executor\": \"Run\",\n    \"Kotlin.MyDataClassKt.executor\": \"Run\",\n    \"Kotlin.NestedClassesKt.executor\": \"Run\",\n    \"Kotlin.SealedKt.executor\": \"Run\",\n    \"Kotlin.SingletonKt.executor\": \"Run\",\n    \"Kotlin.SomeClassKt.executor\": \"Run\",\n    \"Kotlin.StaticKt.executor\": \"Run\",\n    \"Kotlin.VisibilityModifiersKt.executor\": \"Run\",\n    \"Kotlin.WhenAndReturningKt.executor\": \"Run\",\n    \"Kotlin.WhenWordKt.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"/home/kir/IdeaProjects/kotlin\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/scripts\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Kotlin.SealedKt\">\n    <configuration name=\"CompositionKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"oop.CompositionKt\" />\n      <module name=\"kotlin.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"InheritanceKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"oop.InheritanceKt\" />\n      <module name=\"kotlin.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"InterfaceTriesKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"oop.InterfaceTriesKt\" />\n      <module name=\"kotlin.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"SealedKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"oop.SealedKt\" />\n      <module name=\"kotlin.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"VisibilityModifiersKt\" type=\"JetRunConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"oop.VisibilityModifiersKt\" />\n      <module name=\"kotlin.main\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Kotlin.SealedKt\" />\n        <item itemvalue=\"Kotlin.CompositionKt\" />\n        <item itemvalue=\"Kotlin.InheritanceKt\" />\n        <item itemvalue=\"Kotlin.VisibilityModifiersKt\" />\n        <item itemvalue=\"Kotlin.InterfaceTriesKt\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-17.0.10-corretto-17.0.10-f644763e9732-f00315f9\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"08240366-9f3c-49a6-ab6f-4af1d024927c\" name=\"Changes\" comment=\"\" />\n      <created>1717159803146</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1717159803146</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"done with second chapter, started third\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1717430316685</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1717430316686</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"done with second chapter, started third\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"done with second chapter, started third\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 75591e56765e9484f3fc8816c22cd74f68445390)
++++ b/.idea/workspace.xml	(date 1717518077990)
+@@ -4,18 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with second chapter, started third">
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/CompanionObject.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Composition.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Inheritance.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/InterfaceTries.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Sealed.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/StaticFuns.kt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/oop/VisibilityModifiers.kt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Cars.kt" afterDir="false" />
+-    </list>
++    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with third chapter, started forth" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -104,6 +93,7 @@
+     "Kotlin.SealedKt.executor": "Run",
+     "Kotlin.SingletonKt.executor": "Run",
+     "Kotlin.SomeClassKt.executor": "Run",
++    "Kotlin.SomeTriesKt.executor": "Run",
+     "Kotlin.StaticKt.executor": "Run",
+     "Kotlin.VisibilityModifiersKt.executor": "Run",
+     "Kotlin.WhenAndReturningKt.executor": "Run",
+@@ -112,19 +102,23 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "/home/kir/IdeaProjects/kotlin",
++    "last_opened_file_path": "/home/kir/IdeaProjects/kotlin/v11_141_tiasys_prod.xml",
+     "project.structure.last.edited": "Modules",
+     "project.structure.proportion": "0.15",
+     "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "preferences.pluginManager"
++    "settings.editor.selected.configurable": "preferences.pluginManager",
++    "two.files.diff.last.used.file": "/home/kir/IdeaProjects/kotlin/v11_141_tiasys_prod.xml"
+   }
+ }]]></component>
+   <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src/scripts" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Kotlin.SealedKt">
++  <component name="RunManager" selected="Kotlin.SomeTriesKt">
+     <configuration name="CompositionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="oop.CompositionKt" />
+       <module name="kotlin.main" />
+@@ -139,15 +133,15 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="InterfaceTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="oop.InterfaceTriesKt" />
++    <configuration name="SealedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="oop.SealedKt" />
+       <module name="kotlin.main" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="SealedKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="oop.SealedKt" />
++    <configuration name="SomeTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="functions.SomeTriesKt" />
+       <module name="kotlin.main" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+@@ -162,11 +156,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Kotlin.SomeTriesKt" />
+         <item itemvalue="Kotlin.SealedKt" />
+         <item itemvalue="Kotlin.CompositionKt" />
+         <item itemvalue="Kotlin.InheritanceKt" />
+         <item itemvalue="Kotlin.VisibilityModifiersKt" />
+-        <item itemvalue="Kotlin.InterfaceTriesKt" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -194,7 +188,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1717430316686</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="done with third chapter, started forth">
++      <option name="closed" value="true" />
++      <created>1717518057090</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1717518057090</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -210,7 +212,8 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="done with second chapter, started third" />
+-    <option name="LAST_COMMIT_MESSAGE" value="done with second chapter, started third" />
++    <MESSAGE value="done with third chapter, started forth" />
++    <option name="LAST_COMMIT_MESSAGE" value="done with third chapter, started forth" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />

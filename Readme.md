@@ -18,6 +18,9 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### withObservable
 ### @Annotations
 ### Nothing type
+### Use [] instead of .get for collections
+### Sequence
+### 'KotlinTest'
 
 
-# Continue form `Cahpter 10 Collections p277 Programming Kotlin`
+# Continue form `Chapter 11 Matchers p317 Programming Kotlin`

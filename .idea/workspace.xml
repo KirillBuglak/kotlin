@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="finished eighth chapter, started ninth">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dataClasses/Tries.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics/Tries.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generics/TypeVariance.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/nullSafetyAndReflexion/NullSafetyTries.kt" afterDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with third chapter, started forth">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collections/Tries.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/simpleTests/StringTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/basics/Basics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Basics.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/basics/Customer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basics/Customer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/oop/SingletonParent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/SingletonParent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +58,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="kotlin" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -97,95 +99,141 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build kotlin.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kotlin [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.kotlin [build].executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.BasicsKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.CarsKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.CastingKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.CompanionObjectKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.CompositionKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.ExceptionsKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.InheritanceKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.InterfaceTriesKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.LoopsKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MyDataClassKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.NestedClassesKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.SealedKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.SingletonKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.SomeClassKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.StaticKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.VisibilityModifiersKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.WhenAndReturningKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.WhenWordKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kir/IdeaProjects/kotlin&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Beh.executor": "Run",
+    "Gradle.Build kotlin.executor": "Run",
+    "Gradle.StringTest.executor": "Run",
+    "Gradle.StringTests.executor": "Run",
+    "Gradle.kotlin [:Main.main()].executor": "Run",
+    "Gradle.kotlin [build].executor": "Run",
+    "Gradle.kotlin [compileTestKotlin].executor": "Run",
+    "Gradle.kotlin [dependencies].executor": "Run",
+    "Gradle.kotlin [tasks].executor": "Run",
+    "Gradle.kotlin [test].executor": "Run",
+    "JUnit.Beh.executor": "Run",
+    "JUnit.FSpec.executor": "Run",
+    "JUnit.ShSpec.executor": "Run",
+    "JUnit.StrSpec.executor": "Run",
+    "JUnit.StringTests.executor": "Run",
+    "JUnit.simpleTests in kotlin.test.executor": "Run",
+    "Kotlin.ArraysKt.executor": "Run",
+    "Kotlin.BasicsKt.executor": "Run",
+    "Kotlin.CarsKt.executor": "Run",
+    "Kotlin.CastingKt.executor": "Run",
+    "Kotlin.CompanionObjectKt.executor": "Run",
+    "Kotlin.CompositionKt.executor": "Run",
+    "Kotlin.ExceptionsKt.executor": "Run",
+    "Kotlin.InheritanceKt.executor": "Run",
+    "Kotlin.InterfaceTriesKt.executor": "Run",
+    "Kotlin.LoopsKt.executor": "Run",
+    "Kotlin.MyDataClassKt.executor": "Run",
+    "Kotlin.NestedClassesKt.executor": "Run",
+    "Kotlin.SealedKt.executor": "Run",
+    "Kotlin.SingletonKt.executor": "Run",
+    "Kotlin.SomeClassKt.executor": "Run",
+    "Kotlin.StaticKt.executor": "Run",
+    "Kotlin.TriesKt (2).executor": "Run",
+    "Kotlin.VisibilityModifiersKt.executor": "Run",
+    "Kotlin.WhenAndReturningKt.executor": "Run",
+    "Kotlin.WhenWordKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/kir/IdeaProjects/kotlin",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/kotlin/simpleTests" />
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.TriesKt (1)">
-    <configuration name="NullSafetyTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nullSafetyAndReflexion.NullSafetyTriesKt" />
-      <module name="kotlin.main" />
+  <component name="RunManager" selected="JUnit.simpleTests in kotlin.test">
+    <configuration name="Beh" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;Beh&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Beh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kotlin.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Beh" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="prperties.PropTriesKt" />
-      <module name="kotlin.main" />
+    <configuration name="FSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kotlin.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FSpec" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriesKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dataClasses.TriesKt" />
-      <module name="kotlin.main" />
+    <configuration name="StrSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kotlin.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StrSpec" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generics.TriesKt" />
-      <module name="kotlin.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TypeVarianceKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generics.TypeVarianceKt" />
-      <module name="kotlin.main" />
+    <configuration name="simpleTests in kotlin.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kotlin.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="simpleTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="simpleTests" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Kotlin.NullSafetyTriesKt" />
-      <item itemvalue="Kotlin.TriesKt" />
-      <item itemvalue="Kotlin.TriesKt (1)" />
-      <item itemvalue="Kotlin.TypeVarianceKt" />
-      <item itemvalue="Kotlin.PropTriesKt" />
+      <item itemvalue="Gradle.Beh" />
+      <item itemvalue="JUnit.Beh" />
+      <item itemvalue="JUnit.FSpec" />
+      <item itemvalue="JUnit.StrSpec" />
+      <item itemvalue="JUnit.simpleTests in kotlin.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.TriesKt (1)" />
-        <item itemvalue="Kotlin.TypeVarianceKt" />
-        <item itemvalue="Kotlin.TriesKt" />
-        <item itemvalue="Kotlin.NullSafetyTriesKt" />
-        <item itemvalue="Kotlin.PropTriesKt" />
+        <item itemvalue="JUnit.simpleTests in kotlin.test" />
+        <item itemvalue="JUnit.StrSpec" />
+        <item itemvalue="JUnit.Beh" />
+        <item itemvalue="JUnit.FSpec" />
+        <item itemvalue="Gradle.Beh" />
       </list>
     </recent_temporary>
   </component>
