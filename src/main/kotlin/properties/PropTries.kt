@@ -1,6 +1,5 @@
-package prperties
+package properties
 
-import functions.string
 import kotlin.properties.Delegates
 import kotlin.reflect.KProperty
 

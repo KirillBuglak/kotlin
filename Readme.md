@@ -21,6 +21,7 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### Use [] instead of .get for collections
 ### Sequence
 ### 'KotlinTest'
+### 'KotlinTest' - csv tables to test code
 
 
 # Continue form `Chapter 11 Matchers p317 Programming Kotlin`

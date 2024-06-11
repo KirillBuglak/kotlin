@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with third chapter, started forth">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collections/Tries.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/simpleTests/StringTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with tenth chapter, started eleventh">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/inspectors/Inspectors.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/interceptors/Interceptors.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/matchers/Matchers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/propertyTesting/PropertyTesting.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tableAndConfigTesting/TableAndConfigTesting.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/prperties/PropTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/properties/PropTries.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/simpleTests/StringTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/simpleTests/SpecsTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +80,8 @@
         <option value="Kotlin Data Class" />
         <option value="Class" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -103,6 +106,7 @@
   "keyToString": {
     "Gradle.Beh.executor": "Run",
     "Gradle.Build kotlin.executor": "Run",
+    "Gradle.ConfigTest.executor": "Run",
     "Gradle.StringTest.executor": "Run",
     "Gradle.StringTests.executor": "Run",
     "Gradle.kotlin [:Main.main()].executor": "Run",
@@ -112,10 +116,24 @@
     "Gradle.kotlin [tasks].executor": "Run",
     "Gradle.kotlin [test].executor": "Run",
     "JUnit.Beh.executor": "Run",
+    "JUnit.CollectionMatchers.executor": "Run",
+    "JUnit.Combining.executor": "Run",
+    "JUnit.ConfigTest.executor": "Run",
+    "JUnit.EventTest.executor": "Run",
     "JUnit.FSpec.executor": "Run",
+    "JUnit.FloatingPointMatchers.executor": "Run",
+    "JUnit.Inspectors.executor": "Run",
+    "JUnit.PropTesting.executor": "Run",
     "JUnit.ShSpec.executor": "Run",
+    "JUnit.SpecCaseInterceptor.executor": "Run",
     "JUnit.StrSpec.executor": "Run",
     "JUnit.StringTests.executor": "Run",
+    "JUnit.Strings.executor": "Run",
+    "JUnit.TableTest.executor": "Run",
+    "JUnit.TestCaseInterceptor.executor": "Run",
+    "JUnit.TestCustomMatcher.executor": "Run",
+    "JUnit.TestWithInterceptors.executor": "Run",
+    "JUnit.Throw.executor": "Run",
     "JUnit.simpleTests in kotlin.test.executor": "Run",
     "Kotlin.ArraysKt.executor": "Run",
     "Kotlin.BasicsKt.executor": "Run",
@@ -154,8 +172,8 @@
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.simpleTests in kotlin.test">
-    <configuration name="Beh" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.ConfigTest">
+    <configuration name="ConfigTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -168,7 +186,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;Beh&quot;" />
+            <option value="&quot;tableTesting.ConfigTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,61 +197,96 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Beh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kotlin.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Beh" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="kotlin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="FSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kotlin.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FSpec" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="kotlin [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="StrSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kotlin.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StrSpec" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="simpleTests in kotlin.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="kotlin.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="simpleTests.*" />
+          <option name="PATTERN" value="tableAndConfigTesting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="simpleTests" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="tableTesting" />
+      <option name="MAIN_CLASS_NAME" value="tableAndConfigTesting.ConfigTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kotlin.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tableAndConfigTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tableTesting" />
+      <option name="MAIN_CLASS_NAME" value="tableAndConfigTesting.EventTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.Beh" />
-      <item itemvalue="JUnit.Beh" />
-      <item itemvalue="JUnit.FSpec" />
-      <item itemvalue="JUnit.StrSpec" />
-      <item itemvalue="JUnit.simpleTests in kotlin.test" />
+      <item itemvalue="Gradle.ConfigTest" />
+      <item itemvalue="Gradle.kotlin [build]" />
+      <item itemvalue="Gradle.kotlin [test]" />
+      <item itemvalue="JUnit.ConfigTest" />
+      <item itemvalue="JUnit.EventTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.simpleTests in kotlin.test" />
-        <item itemvalue="JUnit.StrSpec" />
-        <item itemvalue="JUnit.Beh" />
-        <item itemvalue="JUnit.FSpec" />
-        <item itemvalue="Gradle.Beh" />
+        <item itemvalue="JUnit.ConfigTest" />
+        <item itemvalue="Gradle.ConfigTest" />
+        <item itemvalue="Gradle.kotlin [build]" />
+        <item itemvalue="Gradle.kotlin [test]" />
+        <item itemvalue="JUnit.EventTest" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +328,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717688433469</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done with tenth chapter, started eleventh">
+      <option name="closed" value="true" />
+      <created>1718037037370</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718037037370</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +354,8 @@
     <MESSAGE value="done with second chapter, started third" />
     <MESSAGE value="finished fourth chapter, started fifth" />
     <MESSAGE value="finished fifth chapter, started sixth" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished fifth chapter, started sixth" />
+    <MESSAGE value="done with tenth chapter, started eleventh" />
+    <option name="LAST_COMMIT_MESSAGE" value="done with tenth chapter, started eleventh" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
