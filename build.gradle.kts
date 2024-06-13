@@ -17,6 +17,7 @@ dependencies {
 //    implementation("joda-time;joda-time:2.12.7")
     testImplementation(kotlin("test"))
     implementation("io.kotlintest:kotlintest:2.0.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
     implementation(kotlin("script-runtime"))
     implementation(kotlin("reflect"))
 }
