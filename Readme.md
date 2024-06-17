@@ -23,5 +23,8 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### 'KotlinTest'
 ### 'KotlinTest' - csv tables to test code
 
+## Things to study for coroutines
+### scopes
 
-# Continue form `Chapter 11 Matchers p317 Programming Kotlin`
+
+# Continue form `Managing Jobs p.51`
