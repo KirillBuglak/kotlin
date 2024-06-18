@@ -25,6 +25,10 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 
 ## Things to study for coroutines
 ### scopes
+### can cancel parent in child job?!
+### yield()?!
+### tryEmit in MutableSharedFlow()?!
 
 
-# Continue form `Managing Jobs p.51`
+
+# Continue form `Operating on Flows p.101`
