@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with twelfth  chapter, started thirteenth">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/FlowTries.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/Jobs.kt" afterDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="added coroutines dependency">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/ChannelsTries.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_24,_10_05_AM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_24__10_05_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/coroutines/FlowTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/FlowTries.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/kir/IdeaProjects/pgw-all/portals/prehost-vpp/portal-backend",
+    "last_opened_file_path": "/home/k.buglak/IdeaProjects/csback",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -178,31 +177,16 @@
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.FlowTriesKt">
-    <configuration name="kotlin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Kotlin.ChannelsTriesKt">
     <configuration name="AsyncTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coroutines.AsyncTriesKt" />
+      <module name="kotlin.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChannelsTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.ChannelsTriesKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,7 +214,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.kotlin [build]" />
+      <item itemvalue="Kotlin.ChannelsTriesKt" />
       <item itemvalue="Kotlin.FlowTriesKt" />
       <item itemvalue="Kotlin.JobsKt" />
       <item itemvalue="Kotlin.AsyncTriesKt" />
@@ -238,11 +222,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ChannelsTriesKt" />
         <item itemvalue="Kotlin.FlowTriesKt" />
         <item itemvalue="Kotlin.JobsKt" />
         <item itemvalue="Kotlin.AsyncTriesKt" />
         <item itemvalue="Kotlin.SimpleTriesKt" />
-        <item itemvalue="Gradle.kotlin [build]" />
       </list>
     </recent_temporary>
   </component>

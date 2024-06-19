@@ -10,6 +10,44 @@ fun main() {
 //    catchAndRetry()u
 //    mutableSharedFlowTries()
 //    mutableStatesFlowWithDelayedSubscr()
+//    mutableStateRepeatedState()
+//    bounceTries()
+//    dropTries()
+    filterTries()
+}
+
+private fun filterTries() {
+    runBlocking {
+        val flowOf = flowOf("1", 1, 'a', Int, null, null)
+        flowOf.filterIsInstance<Int>().collect(::println)
+        flowOf.filterNotNull().collect(::println)
+    }
+}
+
+private fun dropTries() {
+    runBlocking {
+        flowOf(1, 2, 3, 4, 5, 6, 7, 8, 9).dropWhile { it % 4 != 0 }.collect(::println) // TODO: returns 4 5 6 7 8 9
+    }
+}
+
+@OptIn(DelicateCoroutinesApi::class)
+private fun bounceTries() {
+    val flow = flow {
+        for (i in 1..20) {
+            if (i % 3 != 0) {
+                delay(1_000)
+            }
+            emit(i)
+        }
+    }
+    GlobalScope.launch(Dispatchers.Main) {
+        flow.debounce(1_000) // TODO: waiting that time for the most current result after 1sec in this specific example
+            .collect(::println)
+    }
+}
+
+@OptIn(DelicateCoroutinesApi::class)
+private fun mutableStateRepeatedState() {
     val mutableStateFlow = MutableStateFlow("a")
     GlobalScope.launch(Dispatchers.Main) {
         for (i in 1..20) { //todo no matter how more cycles we add - there would be only one state change - the rest of instantiation is ignored since values are the same - 'b'

@@ -31,4 +31,4 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 
 
 
-# Continue form `Operating on Flows p.101`
+# Continue form `Consuming a ReceiveChannel p.113`
