@@ -28,6 +28,10 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### can cancel parent in child job?!
 ### yield()?!
 ### tryEmit in MutableSharedFlow()?!
+### What is Flow and Channel difference
+### Shared or State Flows
+### ?!CallBacks
+
 
 
 

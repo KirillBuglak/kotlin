@@ -1,17 +1,134 @@
 package coroutines
 
 import kotlinx.coroutines.*
-import kotlinx.coroutines.channels.Channel
-import kotlinx.coroutines.channels.actor
-import kotlinx.coroutines.channels.consumeEach
-import kotlinx.coroutines.channels.produce
+import kotlinx.coroutines.channels.*
+import kotlinx.coroutines.flow.*
 
 @OptIn(DelicateCoroutinesApi::class)
 fun main() {
 //    simpleChannelExample()
 //    factoryChannelCreation()
 //    sendAndReceiveCahnnels()
-    sendAndTrySendTries()
+//    sendAndTrySendTries()
+//    pollingTries()
+//    toListTries()
+//    consumeAsFlowTries()
+//    bufferedTries()
+//    conflatedTries()
+//    multipleConsumersTries()
+    broadcastTries()
+
+}
+
+private fun broadcastTries() { //todo Replaced with shared or state flows
+    val flow = MutableSharedFlow<Int>(
+        3,
+        onBufferOverflow = BufferOverflow.DROP_OLDEST,
+        extraBufferCapacity = 1
+    )
+
+    GlobalScope.launch(Dispatchers.Main) {
+        flow.collect{ println("A - $it") }
+    }
+
+    GlobalScope.launch(Dispatchers.Main) {
+        flow.collect{ println("B - $it") }
+    }
+
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..10) {
+            flow.tryEmit(i)
+        }
+    }
+}
+
+private fun multipleConsumersTries() {
+    val channel = Channel<Int>(Channel.BUFFERED)
+
+    GlobalScope.launch(Dispatchers.Main) {
+        channel.consumeEach { println("A - $it") }
+    }
+
+    GlobalScope.launch(Dispatchers.Main) {
+        channel.consumeEach { println("B - $it") }
+    }
+
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..10) {
+            channel.send(i)
+        }
+    }
+}
+
+private fun conflatedTries() {
+    val channel = Channel<Int>(Channel.CONFLATED)
+    GlobalScope.launch(Dispatchers.Main) {
+        delay(1_000)
+        channel.consume(::println)
+    }
+
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..50) {
+            delay(100)
+            channel.send(i)
+            println("Sent to channel - $i")
+        }
+    }
+}
+
+private fun bufferedTries() {
+    val channel = Channel<Int>(capacity = 3)
+    GlobalScope.launch(Dispatchers.Main) {
+        delay(1_000)
+        channel.consumeEach(::println)
+    }
+
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..5) {
+            channel.send(i)
+            println("Sent to channel - $i")
+        }
+    }
+}
+
+private fun consumeAsFlowTries() {
+    val channel = Channel<Int>(Channel.BUFFERED)
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..6) {
+            delay(200)
+            channel.send(i)
+        }
+        channel.close()
+    }
+    runBlocking {
+        channel.consumeAsFlow().collect(::println)
+    }
+}
+
+private fun toListTries() {
+    val channel = Channel<Int>(Channel.BUFFERED)
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..6) {
+            delay(200)
+            channel.send(i)
+        }
+        channel.close()
+    }
+    runBlocking {
+        println(channel.toList())
+    }
+}
+
+private fun pollingTries() {
+    val channel = Channel<Int>(Channel.BUFFERED)
+    GlobalScope.launch(Dispatchers.Default) {
+        for (i in 1..6) {
+            delay(200)
+            channel.send(i)
+        }
+        channel.close()
+    }
+    println(channel.tryReceive().getOrNull())
 }
 
 private fun sendAndTrySendTries() {

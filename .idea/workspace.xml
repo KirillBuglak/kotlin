@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="added coroutines dependency">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/ChannelsTries.kt" afterDir="false" />
+    <list default="true" id="08240366-9f3c-49a6-ab6f-4af1d024927c" name="Changes" comment="done with twelfth  chapter, started thirteenth">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/CreatingScopes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_24,_10_05_AM_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_10_24__10_05_AM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/coroutines/FlowTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/FlowTries.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/coroutines/ChannelsTries.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/coroutines/ChannelsTries.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +52,6 @@
                 <item name="kotlin" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="help" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="kotlin" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -103,6 +99,7 @@
     "Gradle.kotlin [:Main.main()].executor": "Run",
     "Gradle.kotlin [buildDependents].executor": "Run",
     "Gradle.kotlin [build].executor": "Run",
+    "Gradle.kotlin [clean].executor": "Run",
     "Gradle.kotlin [compileTestKotlin].executor": "Run",
     "Gradle.kotlin [dependencies].executor": "Run",
     "Gradle.kotlin [tasks].executor": "Run",
@@ -133,8 +130,10 @@
     "Kotlin.BasicsKt.executor": "Run",
     "Kotlin.CarsKt.executor": "Run",
     "Kotlin.CastingKt.executor": "Run",
+    "Kotlin.ChannelsTriesKt.executor": "Run",
     "Kotlin.CompanionObjectKt.executor": "Run",
     "Kotlin.CompositionKt.executor": "Run",
+    "Kotlin.CreatingScopesKt.executor": "Run",
     "Kotlin.ExceptionsKt.executor": "Run",
     "Kotlin.FlowTriesKt.executor": "Run",
     "Kotlin.InheritanceKt.executor": "Run",
@@ -143,6 +142,7 @@
     "Kotlin.LoopsKt.executor": "Run",
     "Kotlin.MyDataClassKt.executor": "Run",
     "Kotlin.NestedClassesKt.executor": "Run",
+    "Kotlin.OperatingOnFlowTriesKt.executor": "Run",
     "Kotlin.SealedKt.executor": "Run",
     "Kotlin.SimpleTriesKt.executor": "Run",
     "Kotlin.SingletonKt.executor": "Run",
@@ -163,7 +163,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
   "keyToStringList": {
     "kotlin-gradle-user-dirs": [
@@ -177,13 +177,28 @@
       <recent name="$PROJECT_DIR$/src/scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ChannelsTriesKt">
-    <configuration name="AsyncTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coroutines.AsyncTriesKt" />
-      <module name="kotlin.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Kotlin.CreatingScopesKt">
+    <configuration name="kotlin [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="ChannelsTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="coroutines.ChannelsTriesKt" />
@@ -192,15 +207,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlowTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coroutines.FlowTriesKt" />
+    <configuration name="CreatingScopesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.CreatingScopesKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coroutines.JobsKt" />
+    <configuration name="OperatingOnFlowTriesKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coroutines.OperatingOnFlowTriesKt" />
       <module name="kotlin.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,19 +229,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.kotlin [build]" />
+      <item itemvalue="Kotlin.CreatingScopesKt" />
+      <item itemvalue="Kotlin.OperatingOnFlowTriesKt" />
       <item itemvalue="Kotlin.ChannelsTriesKt" />
-      <item itemvalue="Kotlin.FlowTriesKt" />
-      <item itemvalue="Kotlin.JobsKt" />
-      <item itemvalue="Kotlin.AsyncTriesKt" />
       <item itemvalue="Kotlin.SimpleTriesKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.CreatingScopesKt" />
         <item itemvalue="Kotlin.ChannelsTriesKt" />
-        <item itemvalue="Kotlin.FlowTriesKt" />
-        <item itemvalue="Kotlin.JobsKt" />
-        <item itemvalue="Kotlin.AsyncTriesKt" />
+        <item itemvalue="Kotlin.OperatingOnFlowTriesKt" />
         <item itemvalue="Kotlin.SimpleTriesKt" />
+        <item itemvalue="Gradle.kotlin [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -286,6 +301,17 @@
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
