@@ -31,8 +31,3 @@ kotlinc -script src/scripts/SomeScript.kts Sam
 ### What is Flow and Channel difference
 ### Shared or State Flows
 ### ?!CallBacks
-
-
-
-
-# Continue form `Consuming a ReceiveChannel p.113`
